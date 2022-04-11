@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo mount -t cifs //192.168.9.242/share /mnt/hgfs/share -o username=mh,password=mh123456 -o uid=1000,gid=1000,dir_mode=0777,file_mode=0777,nounix,noserverino,iocharset=utf8
