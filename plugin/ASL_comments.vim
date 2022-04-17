@@ -51,7 +51,7 @@ endfunction
 function! ASL_Comment() range
 	let l:ComStype = ASL_CommentStyle()
 	for s in l:ComStype.Comment
- 		execute ':sil '.l:firstline.','.l:lastline.s
+ 		execute ':sil '.a:firstline.','.a:lastline.s
 	endfor
 " 	echo l:ComStype
 endfunction
@@ -60,6 +60,6 @@ endfunction
 function! ASL_UnComment() range
 	let l:ComStype = ASL_CommentStyle()
   for s in l:ComStype.UnComment
-    execute ':sil '.l:firstline.','.l:lastline.s
+    execute ':sil '.a:firstline.','.a:lastline.s
   endfor
 endfunction
