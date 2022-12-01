@@ -1,0 +1,4 @@
+#!/bin/bash
+# mount -t nfs -o nolock 192.168.9.53:/home/ubuntu/work/DM365/hasi/test_bin /home/ubuntu/work/DM365/hasi/test_bin
+mount --bind /host /home/ubuntu/work
+mount --bind /host/lesson /home/ubuntu/lesson
